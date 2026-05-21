@@ -7,4 +7,5 @@ function BurglarBook.applyMagazineTraits(player)
         if not player:hasTrait(CharacterTrait.BURGLAR) then
             traits:add(CharacterTrait.BURGLAR)
         end
+        player:Say(getText("IGUI_PlayerText_HaveMaster"))
 end

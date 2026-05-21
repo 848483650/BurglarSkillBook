@@ -8,7 +8,7 @@ function ISReadABook:perform(...)
     if MaxDebug then print("start") end
     if readType == "Base.BurglarBook" then
 -- 向服务器发送指令
-        sendClientCommand(self.character, "MaxBurglarBook", "Maxfield" , {
+        sendClientCommand(self.character, "MaxBurglarBook", "ApplyBurglar" , {
             magazineType = readType
         })
         ISTimedActionQueue.clear(self.character)
