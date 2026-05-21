@@ -1,6 +1,7 @@
 BurglarBook = BurglarBook or {}
 local oISReadABookPerform = ISReadABook.perform
 Player = nil
+MaxDebug = false
 -- 重写 ISReadABook:perform
 function ISReadABook:perform(...)
     local readType = self.item:getFullType()
