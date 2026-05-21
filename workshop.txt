@@ -1,0 +1,6 @@
+version=1
+id=3729528773
+title=[B42]BurglarBook
+description=Added a Burglar Skill Book item that allows learning Burglar trait (ability to hotwire cars and less chance to break locks) by reading the book.
+tags=Build 42;Items;Literature;Skills;Traits
+visibility=public

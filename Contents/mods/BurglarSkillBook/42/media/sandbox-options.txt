@@ -1,0 +1,10 @@
+VERSION = 1,
+option BurglarBook.spawnRate
+{
+	type = enum,
+	default = 3,
+	numValues = 5,
+	
+	page = BurglarBook,
+	translation = BurglarBook.spawnRate,
+}

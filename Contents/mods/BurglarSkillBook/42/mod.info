@@ -1,0 +1,6 @@
+name=[B42]盗贼手册 BurglarBook
+id=MAX_BuglarSkillBook
+description=添加了一个盗贼手册物品 通过阅读书籍学习盗贼技能 Added a Burglar Skill Book item that allows learning Burglar Tradits by reading the book.
+author=Maxfield
+poster=icon.png
+icon=icon.png

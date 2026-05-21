@@ -1,0 +1,10 @@
+{
+    "Sandbox_BurglarBook": "BurglarBook",
+    "Sandbox_BurglarBook.spawnRate": "Spawn Rate",
+    "Sandbox_BurglarBook.spawnRate_tooltip": "Change the rate of BurglarBook spawns",
+    "Sandbox_BurglarBook.spawnRate_option1": "Very Low",
+    "Sandbox_BurglarBook.spawnRate_option2": "Low",
+    "Sandbox_BurglarBook.spawnRate_option3": "Default",
+    "Sandbox_BurglarBook.spawnRate_option4": "High",
+    "Sandbox_BurglarBook.spawnRate_option5": "Very High"
+}

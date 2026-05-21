@@ -1,0 +1,17 @@
+module Base {
+    imports {
+        Base
+    }
+    item BurglarBook {
+        DisplayCategory = SkillBook,
+		Tooltip = Tooltip_BurglarBook,
+        ItemType = base:literature,
+        Weight = 0.2,
+        NumberOfPages = 14,
+        Icon = BurglarBook,
+        StaticModel = BookLightBlue,
+        WorldStaticModel = BookClosedLightBlue_Ground,
+        Tags = base:hardcover;base:hollowbook,
+        ReplaceOnUse = BurglarBook,
+    }
+}
