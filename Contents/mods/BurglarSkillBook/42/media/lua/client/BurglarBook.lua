@@ -1,20 +1,32 @@
-require "BurglarBook_Share"
-
+BurglarBook = BurglarBook or {}
 local oISReadABookPerform = ISReadABook.perform
-
+Player = nil
 -- 重写 ISReadABook:perform
 function ISReadABook:perform(...)
     local readType = self.item:getFullType()
     if MaxDebug then print("start") end
     if readType == "Base.BurglarBook" then
--- 向服务器发送指令
-        sendClientCommand(self.character, "MaxBurglarBook", "Maxfield" , {
-            magazineType = readType
-        })
-        ISTimedActionQueue.clear(self.character)
+        BurglarBook.applyBookTraits(self.character)
 
     if MaxDebug then print("done") end
         return
     end
     oISReadABookPerform(self, ...)
+end
+
+
+
+BurglarBook.OnCreatePlayer = function(playerIndex, player)
+	BurglarBook.Player = player
+end
+Events.OnCreatePlayer.Add(BurglarBook.OnCreatePlayer)
+
+
+
+function BurglarBook.applyBookTraits(player)
+    local traits = player:getCharacterTraits()
+        if not player:hasTrait(CharacterTrait.BURGLAR) then
+            traits:add(CharacterTrait.BURGLAR)
+        end
+        player:Say(getText("IGUI_PlayerText_HaveMaster"))
 end
